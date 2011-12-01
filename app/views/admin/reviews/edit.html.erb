@@ -2,16 +2,13 @@
 
 <h2><%= t(:original_version) %></h2>
 
-<p>
-<%= @review.review %>
-</p>
+<div>
+<%= simple_format(@review.review) %>
+</div>
 <br/>
 
 <h2><%= t(:edited_version) %></h2>
 
-<% form_for([:admin, @review]) do |f| %>
-  <%= render :partial => f,
-             :locals  => { :button_name => t(:update) } %>
+<%= form_for([:admin, @review]) do |f| %>
+  <%= render :partial => 'form', :locals => {:f => f} %>
 <% end %>
-
-<%= link_to t('back_reviews'), admin_reviews_path %>
