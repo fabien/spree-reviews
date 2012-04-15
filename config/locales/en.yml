@@ -12,7 +12,7 @@ en:
     models:
       review:
         one: one review
-        other: %{count} reviews
+        other: "%{count} reviews"
   
   approve: Approve
   Approved_reviews: Approved
