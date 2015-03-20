@@ -9,7 +9,7 @@ fr-FR:
     models:
       review:
         one: one review
-        other: %{count} reviews
+        other: "%{count} reviews"
   
   write_your_own_review: "Ecrivez un commentaire"
   review_management: "Gestion des commentaires"
